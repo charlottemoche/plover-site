@@ -1101,7 +1101,7 @@ video {
 
 @font-face {
     font-family: 'Montserrat';
-    font-weight: 600;
+    font-weight: 500;
     src: url('/public/fonts/Montserrat-Semibold.ttf') format('truetype');
 }
 
