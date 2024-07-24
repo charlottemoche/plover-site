@@ -1,4 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
+    function slowScrollTo(element) {
+        const targetPosition = element.offsetTop
+        const startPosition = window.scrollY
+        const distance = targetPosition - startPosition - 60
+        const duration = 1800
+        let startTime = null
+
+        function animation(currentTime) {
+            if (startTime === null) startTime = currentTime
+            const timeElapsed = currentTime - startTime
+            const run = ease(timeElapsed, startPosition, distance, duration)
+            window.scrollTo(0, run)
+            if (timeElapsed < duration) requestAnimationFrame(animation)
+        }
+
+        function ease(t, b, c, d) {
+            t /= d / 2
+            if (t < 1) return c / 2 * t * t + b
+            t--
+            return -c / 2 * (t * (t - 2) - 1) + b
+        }
+
+        requestAnimationFrame(animation)
+    }
+
     const mobileMenuOpen = document.querySelector('#mobile-menu-open')
     const mobileMenuClose = document.querySelector('#mobile-menu-close')
     const navItems = document.querySelector('#nav-items')
