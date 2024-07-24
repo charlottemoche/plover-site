@@ -4,14 +4,8 @@
 
 @font-face {
     font-family: 'Montserrat';
-    font-weight: 700;
-    src: url('/public/fonts/Montserrat-Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Montserrat';
     font-weight: 500;
-    src: url('/public/fonts/Montserrat-Semibold.ttf') format('truetype');
+    src: url('/public/fonts/Montserrat-Bold.ttf') format('truetype');
 }
 
 @font-face {
