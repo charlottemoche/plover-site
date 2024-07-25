@@ -1662,6 +1662,10 @@ body {
     font-size: 1.125rem;
   }
 
+  .lg\:font-medium {
+    font-weight: 500;
+  }
+
   .lg\:font-normal {
     font-weight: 400;
   }
@@ -1699,9 +1703,9 @@ body {
     padding-right: 8rem;
   }
 
-  .\32xl\:py-60 {
-    padding-top: 15rem;
-    padding-bottom: 15rem;
+  .\32xl\:py-48 {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
   }
 
   .\32xl\:pt-20 {
