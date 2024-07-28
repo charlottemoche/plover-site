@@ -1064,6 +1064,9 @@ video {
   --tw-text-opacity: 1;
   color: rgb(24 24 27 / var(--tw-text-opacity));
 }
+.underline {
+  text-decoration-line: underline;
+}
 .opacity-0 {
   opacity: 0;
 }
@@ -1268,6 +1271,10 @@ body {
 
   .sm\:pt-10 {
     padding-top: 2.5rem;
+  }
+
+  .sm\:no-underline {
+    text-decoration-line: none;
   }
 
   .sm\:hover\:bg-black:hover {
