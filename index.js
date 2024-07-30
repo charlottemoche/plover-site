@@ -1,4 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+    const thumbnail = document.getElementsByClassName('show-calendar')
+    const popup = document.getElementById('popup')
+
+    for (let i = 0; i < thumbnail.length; i++) {
+        thumbnail[i].addEventListener('click', function () {
+            popup.classList.remove('hidden')
+        })
+    }
+
+    if (popup) {
+        popup.addEventListener('click', function () {
+            popup.classList.add('hidden')
+        })
+    }
+
     function slowScrollTo(element) {
         const targetPosition = element.offsetTop
         const startPosition = window.scrollY
