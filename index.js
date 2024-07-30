@@ -1,17 +1,36 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const thumbnail = document.getElementsByClassName('show-calendar')
+    const thumbnails = document.getElementsByClassName('show-calendar')
     const popup = document.getElementById('popup')
+    const closePopupButton = document.getElementById('close-popup')
 
-    for (let i = 0; i < thumbnail.length; i++) {
-        thumbnail[i].addEventListener('click', function () {
-            popup.classList.remove('hidden')
-        })
-    }
+    if (popup && thumbnails.length > 0) {
+        for (let i = 0; i < thumbnails.length; i++) {
+            thumbnails[i].addEventListener('click', function () {
+                popup.classList.remove('hidden')
+                setTimeout(() => {
+                    popup.classList.remove('opacity-0')
+                    popup.classList.add('opacity-100')
+                }, 50)
+            })
+        }
 
-    if (popup) {
-        popup.addEventListener('click', function () {
-            popup.classList.add('hidden')
+        const closePopup = () => {
+            popup.classList.remove('opacity-100')
+            popup.classList.add('opacity-0')
+            setTimeout(() => {
+                popup.classList.add('hidden')
+            }, 300)
+        }
+
+        if (closePopupButton) {
+            closePopupButton.addEventListener('click', closePopup)
+        }
+
+        popup.addEventListener('click', function (e) {
+            if (e.target === popup) {
+                closePopup()
+            }
         })
     }
 
