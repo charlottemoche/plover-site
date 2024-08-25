@@ -118,6 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const slides = document.querySelectorAll('.slide')
     const rightArrow = document.querySelector('#next-button')
     const leftArrow = document.querySelector('#prev-button')
+    const carouselText = document.querySelector('#carousel-text')
     const leftArrowSvgPath = leftArrow.querySelector('svg path')
     const rightArrowSvgPath = rightArrow.querySelector('svg path')
     let currentSlide = 0
@@ -152,11 +153,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    const updateCarouselText = () => {
+        carouselText.textContent = `${currentSlide + 1} of ${slides.length}`
+    }
+
     rightArrow.addEventListener('click', () => {
         if (currentSlide < slides.length - 1) {
             currentSlide = (currentSlide + 1) % slides.length
             showSlide(currentSlide)
             updateArrowStates()
+            updateCarouselText()
         }
     })
 
@@ -165,6 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
             currentSlide = (currentSlide - 1 + slides.length) % slides.length
             showSlide(currentSlide)
             updateArrowStates()
+            updateCarouselText()
         }
     })
 
