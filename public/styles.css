@@ -623,6 +623,9 @@ video {
 .mt-24 {
   margin-top: 6rem;
 }
+.mt-auto {
+  margin-top: auto;
+}
 .flex {
   display: flex;
 }
@@ -748,6 +751,9 @@ video {
 .flex-wrap {
   flex-wrap: wrap;
 }
+.items-start {
+  align-items: flex-start;
+}
 .items-end {
   align-items: flex-end;
 }
@@ -762,6 +768,9 @@ video {
 }
 .justify-between {
   justify-content: space-between;
+}
+.gap-1 {
+  gap: 0.25rem;
 }
 .gap-10 {
   gap: 2.5rem;
@@ -800,6 +809,15 @@ video {
 }
 .overflow-hidden {
   overflow: hidden;
+}
+.whitespace-normal {
+  white-space: normal;
+}
+.break-words {
+  overflow-wrap: break-word;
+}
+.break-all {
+  word-break: break-all;
 }
 .rounded-full {
   border-radius: 9999px;
@@ -972,6 +990,9 @@ video {
 .pb-10 {
   padding-bottom: 2.5rem;
 }
+.pb-12 {
+  padding-bottom: 3rem;
+}
 .pb-14 {
   padding-bottom: 3.5rem;
 }
@@ -996,6 +1017,9 @@ video {
 .pl-3 {
   padding-left: 0.75rem;
 }
+.pr-4 {
+  padding-right: 1rem;
+}
 .pt-10 {
   padding-top: 2.5rem;
 }
@@ -1019,6 +1043,9 @@ video {
 }
 .text-3xl {
   font-size: 2.275rem;
+}
+.text-\[11px\] {
+  font-size: 11px;
 }
 .text-\[15px\] {
   font-size: 15px;
@@ -1055,9 +1082,6 @@ video {
 }
 .text-xl {
   font-size: 1.5rem;
-}
-.font-bold {
-  font-weight: 700;
 }
 .font-medium {
   font-weight: 500;
@@ -1209,6 +1233,10 @@ body {
     transform: scale(0.75);
 }
 
+.hover\:underline:hover {
+  text-decoration-line: underline;
+}
+
 .hover\:duration-200:hover {
   transition-duration: 200ms;
 }
@@ -1294,12 +1322,8 @@ body {
     padding-left: 0px;
   }
 
-  .sm\:pl-5 {
-    padding-left: 1.25rem;
-  }
-
-  .sm\:pr-3 {
-    padding-right: 0.75rem;
+  .sm\:pl-4 {
+    padding-left: 1rem;
   }
 
   .sm\:pt-8 {
@@ -1402,6 +1426,10 @@ body {
 
   .md\:pb-0 {
     padding-bottom: 0px;
+  }
+
+  .md\:pb-16 {
+    padding-bottom: 4rem;
   }
 
   .md\:pb-20 {
@@ -1577,6 +1605,11 @@ body {
     border-style: none;
   }
 
+  .lg\:border-brand {
+    --tw-border-opacity: 1;
+    border-color: rgb(11 168 224 / var(--tw-border-opacity));
+  }
+
   .lg\:bg-\[\#051727\] {
     --tw-bg-opacity: 1;
     background-color: rgb(5 23 39 / var(--tw-bg-opacity));
@@ -1637,12 +1670,20 @@ body {
     padding-bottom: 2.5rem;
   }
 
+  .lg\:pb-16 {
+    padding-bottom: 4rem;
+  }
+
   .lg\:pb-20 {
     padding-bottom: 5rem;
   }
 
   .lg\:pb-8 {
     padding-bottom: 2rem;
+  }
+
+  .lg\:pl-0 {
+    padding-left: 0px;
   }
 
   .lg\:pl-20 {
@@ -1653,8 +1694,8 @@ body {
     padding-left: 1rem;
   }
 
-  .lg\:pr-5 {
-    padding-right: 1.25rem;
+  .lg\:pr-4 {
+    padding-right: 1rem;
   }
 
   .lg\:pt-0 {
