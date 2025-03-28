@@ -591,6 +591,9 @@ video {
 .top-16 {
   top: 4rem;
 }
+.top-24 {
+  top: 6rem;
+}
 .top-4 {
   top: 1rem;
 }
@@ -1002,11 +1005,11 @@ video {
 .pb-16 {
   padding-bottom: 4rem;
 }
+.pb-20 {
+  padding-bottom: 5rem;
+}
 .pb-4 {
   padding-bottom: 1rem;
-}
-.pb-44 {
-  padding-bottom: 11rem;
 }
 .pb-6 {
   padding-bottom: 1.5rem;
@@ -1142,8 +1145,20 @@ video {
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+.brightness-200 {
+  --tw-brightness: brightness(2);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
 .brightness-90 {
   --tw-brightness: brightness(.9);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.contrast-200 {
+  --tw-contrast: contrast(2);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.saturate-0 {
+  --tw-saturate: saturate(0);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 .transition {
@@ -1248,6 +1263,10 @@ body {
 
   .sm\:right-auto {
     right: auto;
+  }
+
+  .sm\:ml-4 {
+    margin-left: 1rem;
   }
 
   .sm\:block {
@@ -1502,6 +1521,10 @@ body {
     top: 3.5rem;
   }
 
+  .lg\:ml-2 {
+    margin-left: 0.5rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -1518,8 +1541,8 @@ body {
     height: 2.5rem;
   }
 
-  .lg\:h-12 {
-    height: 3rem;
+  .lg\:h-16 {
+    height: 4rem;
   }
 
   .lg\:h-24 {
@@ -1788,10 +1811,6 @@ body {
 }
 
 @media (min-width: 1280px) {
-
-  .xl\:h-14 {
-    height: 3.5rem;
-  }
 
   .xl\:w-5\/6 {
     width: 83.333333%;
