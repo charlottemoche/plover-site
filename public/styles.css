@@ -1553,6 +1553,10 @@ body {
     height: auto;
   }
 
+  .lg\:min-h-screen {
+    min-height: 100vh;
+  }
+
   .lg\:w-10 {
     width: 2.5rem;
   }
