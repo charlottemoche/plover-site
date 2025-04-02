@@ -1,616 +1,808 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plover Hill Capital</title>
-    <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon"/>
-    <link href="/public/styles.css" rel="stylesheet">
+    <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon" />
+    <link href="/public/styles.css" rel="stylesheet" />
     <script src="index.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="sticky bg-white top-0 z-50 shadow-md">
-        <nav
-            class="gap-3 flex items-center justify-between h-16 lg:h-24 relative px-4 container mx-auto 2xl:px-32 z-40">
-            <a href="/" id="plover-logo" class="min-w-fit max-w-min">
-                <img src="/images/plover-logo.png" alt="Logo" class="h-9 sm:ml-4 lg:ml-2 lg:h-16" />
-            </a>
-            <div class="flex items-center justify-end z-30 shrink-0">
-                <div id="nav-menu-overlay" class="lg:hidden fixed inset-0 top-16 bg-black/50 z-10 hidden">
-                </div>
-                <div id="mobile-menu-open" class="border border-brand rounded-md lg:hidden p-1">
-                    <svg width="24" height="24" viewBox="0 0 24 24" class="text-brand"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-
-                </div>
-                <div id="mobile-menu-close" class="lg:hidden hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M6 18L18 6M6 6l12 12">
-                        </path>
-                    </svg>
-                </div>
-                <div id="nav-items"
-                    class="fixed top-16 right-0 sm:right-auto w-4/5 sm:w-1/2 bg-white border-t z-50 h-full hidden lg:static lg:block lg:w-auto lg:border-none lg:bg-transparent lg:h-auto">
-                    <div
-                        class="flex flex-col items-end lg:flex-row lg:items-center pt-4 px-4 sm:px-10 lg:p-0 gap-4 lg:gap-6 text-zinc-900">
-                        <a href="#about"
-                            class="nav-link sm:hover:text-zinc-700 sm:hover:underline font-medium text-lg lg:text-base">
-                            About
-                        </a>
-                        <a href="#pillars"
-                            class="nav-link sm:hover:text-zinc-700 sm:hover:underline font-medium text-lg lg:text-base">
-                            Pillars
-                        </a>
-                        <a href="#offering"
-                            class="nav-link sm:hover:text-zinc-700 sm:hover:underline font-medium text-lg lg:text-base">
-                            Offering
-                        </a>
-                        <a href="#leadership"
-                            class="nav-link sm:hover:text-zinc-700 sm:hover:underline font-medium text-lg lg:text-base">
-                            Leadership
-                        </a>
-                        <button
-                            class="show-calendar rounded-sm bg-black text-white py-2.5 lg:py-4 px-5 sm:hover:bg-brand max-w-fit transition duration-0 hover:duration-200 font-medium text-lg lg:text-base">
-                            Schedule a meeting
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
-    <div class="bg-gradient-to-b from-brand/40 from-10% to-transparent to-80% relative">
-        <section
-            class="section header opacity-0 container px-7 2xl:px-32 flex flex-col justify-between relative overflow-hidden sm:h-[calc(100dvh-112px)]">
-            <div class="flex flex-col md:flex-row gap-10 pt-4 lg:pt-16 2xl:pt-20">
-                <div class="pt-4 sm:pt-8 basis-2/3">
-                    <div
-                        class="tracking-wide leading-[4rem] md:leading-[5.5rem] text-[3.2rem] lg:text-[4rem] 2xl:text-[4.3rem] px-2 hidden md:block sm:max-w-sm md:max-w-fit shrink-0">
-                        <span>
-                            Your Legacy.
-                        </span>
-                        <span>
-                            Your Future.
-                        </span>
-                        <span class="text-brand">
-                            Our Support.
-                        </span>
-                    </div>
-                    <div class="h-[calc(100svh-98px)] flex flex-col justify-between md:hidden">
-                        <div class="tracking-wide leading-[4rem] text-[3.2rem] px-2 max-w-xs space-y-2">
-                            <div>
-                                Your Legacy.
-                            </div>
-                            <div>
-                                Your Future.
-                            </div>
-                            <div class="text-brand">
-                                Our Support.
-                            </div>
-                        </div>
-                        <div class="self-center flex flex-col items-center mb-4">
-                            <img src="images/bird-black.png" class="w-10 pb-4 md:pb-8" />
-                            <div class="font-semibold text-brand text-med text-center">
-                                PLOVER HILL CAPITAL
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <img src="images/shapes.png" class="hidden md:block md:basis-1/3 w-1/3 shrink-0 md:pt-10" />
-            </div>
-            <img src="images/shapes.png" class="absolute -right-32 top-16 -z-10 sm:w-1/2 md:hidden opacity-60" />
+      <nav
+        class="gap-3 flex items-center justify-between h-16 lg:h-24 relative px-4 container mx-auto 2xl:px-32 z-40"
+      >
+        <a href="/" id="plover-logo" class="min-w-fit max-w-min">
+          <img
+            src="/images/plover-logo.png"
+            alt="Logo"
+            class="h-9 sm:ml-4 lg:ml-2 lg:h-16"
+          />
+        </a>
+        <div class="flex items-center justify-end z-30 shrink-0">
+          <div
+            id="nav-menu-overlay"
+            class="lg:hidden fixed inset-0 top-16 bg-black/50 z-10 hidden"
+          ></div>
+          <div
+            id="mobile-menu-open"
+            class="border border-brand rounded-md lg:hidden p-1"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="text-brand"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 6H20M4 12H20M4 18H20"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div id="mobile-menu-close" class="lg:hidden hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-8 h-8"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </div>
+          <div
+            id="nav-items"
+            class="fixed top-16 right-0 sm:right-auto w-4/5 sm:w-1/2 bg-white border-t z-50 h-full hidden lg:static lg:block lg:w-auto lg:border-none lg:bg-transparent lg:h-auto"
+          >
             <div
-                class="flex flex-col gap-3 items-center justify-center container px-7 sm:py-4 2xl:px-32 sm:pb-16 md:pb-0">
-                <img src="images/bird-black.png" class="hidden md:block w-8" />
-                <div class="pb-10 flex flex-col gap-2">
-                    <div class="hidden md:block font-semibold text-brand lg:text-med text-center">
-                        PLOVER HILL CAPITAL
-                    </div>
-                    <div class="text-xl md:text-[30px] max-w-3xl text-center">
-                        PHC champions independent advisors by providing the resources and support they need to
-                        preserve their legacy and secure their future.
-                    </div>
-                </div>
+              class="flex flex-col items-end lg:flex-row lg:items-center pt-4 px-4 sm:px-10 lg:p-0 gap-4 lg:gap-6 text-zinc-900"
+            >
+              <a
+                href="#about"
+                class="nav-link sm:hover:text-zinc-700 sm:hover:underline font-medium text-lg lg:text-base"
+              >
+                About
+              </a>
+              <a
+                href="#pillars"
+                class="nav-link sm:hover:text-zinc-700 sm:hover:underline font-medium text-lg lg:text-base"
+              >
+                Pillars
+              </a>
+              <a
+                href="#offering"
+                class="nav-link sm:hover:text-zinc-700 sm:hover:underline font-medium text-lg lg:text-base"
+              >
+                Offering
+              </a>
+              <a
+                href="#leadership"
+                class="nav-link sm:hover:text-zinc-700 sm:hover:underline font-medium text-lg lg:text-base"
+              >
+                Leadership
+              </a>
+              <button
+                class="show-calendar rounded-sm bg-black text-white py-2.5 lg:py-4 px-5 sm:hover:bg-brand max-w-fit transition duration-0 hover:duration-200 font-medium text-lg lg:text-base"
+              >
+                Schedule a meeting
+              </button>
             </div>
-        </section>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div
+      class="bg-gradient-to-b from-brand/40 from-10% to-transparent to-80% relative"
+    >
+      <section
+        class="section header opacity-0 container px-7 2xl:px-32 flex flex-col justify-between relative overflow-hidden sm:h-[calc(100dvh-112px)]"
+      >
+        <div class="flex flex-col md:flex-row gap-10 pt-4 lg:pt-16 2xl:pt-20">
+          <div class="pt-4 sm:pt-8 basis-2/3">
+            <div
+              class="tracking-wide leading-[4rem] md:leading-[5.5rem] text-[3.2rem] lg:text-[4rem] 2xl:text-[4.3rem] px-2 hidden md:block sm:max-w-sm md:max-w-fit shrink-0"
+            >
+              <span> Your Legacy. </span>
+              <span> Your Future. </span>
+              <span class="text-brand"> Our Support. </span>
+            </div>
+            <div
+              class="h-[calc(100svh-98px)] flex flex-col justify-between md:hidden"
+            >
+              <div
+                class="tracking-wide leading-[4rem] text-[3.2rem] px-2 max-w-xs space-y-2"
+              >
+                <div>Your Legacy.</div>
+                <div>Your Future.</div>
+                <div class="text-brand">Our Support.</div>
+              </div>
+              <div class="self-center flex flex-col items-center mb-4">
+                <img src="images/bird-black.png" class="w-10 pb-4 md:pb-8" />
+                <div class="font-semibold text-brand text-med text-center">
+                  PLOVER HILL CAPITAL
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <img
+            src="images/shapes.png"
+            class="hidden md:block md:basis-1/3 w-1/3 shrink-0 md:pt-10"
+          />
+        </div>
+        <img
+          src="images/shapes.png"
+          class="absolute -right-32 top-16 -z-10 sm:w-1/2 md:hidden opacity-60"
+        />
+        <div
+          class="flex flex-col gap-3 items-center justify-center container px-7 sm:py-4 2xl:px-32 sm:pb-16 md:pb-0"
+        >
+          <img src="images/bird-black.png" class="hidden md:block w-8" />
+          <div class="pb-10 flex flex-col gap-2">
+            <div
+              class="hidden md:block font-semibold text-brand lg:text-med text-center"
+            >
+              PLOVER HILL CAPITAL
+            </div>
+            <div class="text-xl md:text-[30px] max-w-3xl text-center">
+              PHC champions independent advisors by providing the resources and
+              support they need to preserve their legacy and secure their
+              future.
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
     <section id="about" class="section opacity-0">
-        <div class="container px-7 2xl:px-32 pt-10 md:pt-20 lg:pt-40">
-            <div class="space-y-2 text-[48px] lg:text-[68px]">
-                <div class="pb-4 lg:pb-10">
-                    About
-                </div>
-            </div>
-            <div class="md:leading-10">
-                <div class="max-w-3xl pb-4 text-lg lg:text-[24px]">
-                    <span class="font-medium">
-                        We offer tailored solutions to help advisors protect their legacy, fuel growth, and manage transitions smoothly.
-                        Our offerings include minority capital, transition financing, and expert guidance, empowering you to achieve your goals.
-                    </span>
-                </div>
-
-                <div class="flex gap-4 md:gap-12 text-med">
-                    <div class="md:basis-1/4 my-2 md:my-10 border-r-2 border-brand"></div>
-                    <div class="md:basis-3/4 space-y-6 my-2 md:my-10 lg:pr-10">
-                        <div>
-                            We challenge industry status quos, specifically the notion that <span class="font-semibold">internal succession from
-                            G1 to G2 is neither economically nor practically feasible.</span> We also reject the belief that
-                            <span class="font-semibold">independent advisory firms cannot succeed in this period of mass aggregation.</span>
-                        </div>
-                        <div>
-                            The gradual maturation of the independent financial advisory space over the past 20 years
-                            has created a unique opportunity to address a gap in the market for firms seeking to preserve
-                            both their independence and authenticity. Trends such as the <span class="font-semibold">influx of G2 talent, commoditization
-                            of technology solutions, and increased transparency around valuation and deal structures</span> further support this opportunity.
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container px-7 2xl:px-32 pt-10 md:pt-20 lg:pt-40">
+        <div class="space-y-2 text-[48px] lg:text-[68px]">
+          <div class="pb-4 lg:pb-10">About</div>
         </div>
+        <div class="md:leading-10">
+          <div class="max-w-3xl pb-4 text-lg lg:text-[24px]">
+            <span class="font-medium">
+              We offer tailored solutions to help advisors protect their legacy,
+              fuel growth, and navigate transitions with confidence. Our
+              offerings include capital, transition financing, and experienced
+              guidance, empowering your independence on your terms.
+            </span>
+          </div>
 
-        <div
-            class="bg-cover bg-gradient-to-b from-transparent to-brand/20 pt-10 lg:pt-20 pb-10 sm:pb-0 relative overflow-hidden">
-            <div class="container px-7 2xl:px-32">
-                <div class="text-[36px] lg:text-[48px] pb-10 lg:pb-16">
-                    Market Opportunity
-                </div>
-                <img src="images/line.png" class="hidden sm:block absolute top-12 lg:top-14 right-0 max-w-[20%]" />
-
-                <div
-                    class="grid w-2/3 sm:w-full sm:grid-cols-2 lg:grid-cols-4 lg:gap-10 border-l-2 border-brand pl-3 sm:pl-0 sm:border-none">
-                    <div class="grid relative h-auto sm:border-r-2 sm:border-brand pr-4">
-                        <div class="text-brand text-3xl lg:text-4xl flex items-start gap-1">
-                           <div>>15K</div><div class="text-sm pt-4">*</div>
-                        </div>
-                        <div class="text-base lg:text-med md:pt-2 md:pb-16 lg:pb-20">
-                            SEC Registered RIAs in 2023 an increase from 2022
-                        </div>
-                        <div class="mt-auto text-[11px] text-brand flex gap-1 pt-4 pb-12">
-                            <div>*</div>
-                            <a href="https://www.thinkadvisor.com/2024/06/21/what-the-ria-industry-looks-like-now-in-4-charts/"
-                                class="hover:underline break-words whitespace-normal break-all" target="_blank">
-                                https://www.thinkadvisor.com/2024/06/21/what-the-ria-industry-looks-like-now-in-4-charts/
-                            </a>
-                        </div>
-                    </div>
-                    <img src="images/line.png" class="absolute top-[36%] -right-24 max-w-60 sm:hidden" />
-                    <div class="grid relative h-auto lg:border-r-2 lg:border-brand sm:pl-4 lg:pl-0 lg:pr-4">
-                        <div class="text-brand text-3xl lg:text-4xl flex items-start gap-2">
-                            <div>$128.4T</div><div class="text-sm pt-4">*</div>
-                         </div>
-                        <div class="text-base lg:text-med md:pt-2 md:pb-16 lg:pb-20">
-                            AUM in discretionary managed AUM
-                        </div>
-                        <div class="mt-auto text-[11px] text-brand flex gap-1 pt-4 pb-12">
-                            <div>*</div>
-                            <a href="https://www.thinkadvisor.com/2024/06/21/what-the-ria-industry-looks-like-now-in-4-charts/"
-                                class="hover:underline break-words whitespace-normal break-all" target="_blank">
-                                https://www.thinkadvisor.com/2024/06/21/what-the-ria-industry-looks-like-now-in-4-charts/
-                            </a>
-                        </div>
-                    </div>
-                    <div class="grid relative h-auto sm:border-r-2 sm:border-brand pr-4">
-                        <div class="text-brand text-3xl lg:text-4xl flex items-start gap-1">
-                            <div>37%</div><div class="text-sm pt-4">*</div>
-                         </div>
-                        <div class="text-base lg:text-med md:pt-2 lg:pb-20">
-                            <span>
-                                Financial advisors who plan to retire within 10 years representing
-                                <span class="font-semibold">
-                                    $10.4T
-                                </span>
-                            </span>
-                        </div>
-                        <div class="mt-auto text-[11px] text-brand flex gap-1 pt-4 pb-12">
-                            <div>*</div>
-                            <a href="https://advisorlawllc.com/urgent-call-for-advisor-succession-planning/"
-                                class="hover:underline break-words whitespace-normal break-all" target="_blank">
-                                https://advisorlawllc.com/urgent-call-for-advisor-succession-planning/
-                            </a>
-                        </div>
-                    </div>
-                    <div class="grid relative h-auto sm:pl-4 lg:pl-0 lg:pr-4">
-                        <div class="text-brand text-3xl lg:text-4xl flex items-start gap-1">
-                            <div>40%</div><div class="text-sm pt-4">*</div>
-                         </div>
-                        <div class="text-base lg:text-med md:pt-2 md:pb-16 lg:pb-20">
-                            Financial advisors who do not have a succession plan
-                        </div>
-                        <div class="mt-auto text-[11px] text-brand flex gap-1 pt-4 pb-12">
-                            <div>*</div>
-                            <a href="https://advisorlawllc.com/urgent-call-for-advisor-succession-planning/"
-                                class="hover:underline break-words whitespace-normal break-all" target="_blank">
-                                https://advisorlawllc.com/urgent-call-for-advisor-succession-planning/
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="pillars"
-        class="lg:min-h-screen bg-gradient-to-b from-[#051727] to-[#16314f] border-b border-white relative overflow-hidden">
-        <img src="images/p.png" class="hidden md:block absolute top-4 md:top-8 max-w-[20%] md:max-w-[15%]" />
-
-        <div class="section opacity-0 container px-7 2xl:px-32 py-10 md:py-20 lg:py-32 gap-10">
-            <div>
-                <div class="md:flex">
-                    <div class="basis-1/4"></div>
-                    <div class="basis-3/4">
-                        <div class="text-[48px] lg:text-[68px] text-white pb-8 lg:pb-10">
-                            Pillars
-                        </div>
-                        <div>
-                            <div class="text-white text-med lg:text-[22px] xl:w-5/6">
-                                Our steadfast principles serve as our cornerstone to ensure uniformity and alignment in fulfilling our mission.
-                            </div>
-                            <div class="relative text-slides pb-14">
-                                <div class="slide text-brandLight">
-                                    <div
-                                        class="text-xl lg:text-2xl pb-1 pt-10 md:pt-28 lg:pt-36 md:pb-8 font-semibold">
-                                        Longevity
-                                    </div>
-                                    <div class="text-med lg:text-[26px] w-4/5 sm:w-1/2">
-                                        <div>
-                                            We think in terms of generational value creation, not quartly earnings
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="slide text-brandLight absolute inset-0 transition-opacity duration-300 ease-in-out opacity-0">
-                                    <div
-                                        class="text-xl lg:text-2xl pb-1 pt-10 md:pt-28 lg:pt-36 md:pb-8 font-semibold">
-                                        Perseverance
-                                    </div>
-                                    <div class="text-med lg:text-[26px] sm:w-1/2">
-                                        <div>
-                                            We are stewards of the Founders’ legacy while supporting the next generation
-                                            in building an enduring future​
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="slide text-brandLight absolute inset-0 transition-opacity duration-300 ease-in-out opacity-0">
-                                    <div
-                                        class="text-xl lg:text-2xl pb-1 pt-10 md:pt-28 lg:pt-36 md:pb-8 font-semibold">
-                                        Authenticity
-                                    </div>
-                                    <div class="text-med lg:text-[26px] sm:w-1/2">
-                                        <div>
-                                            We believe one size doesn’t fit all and that true success is achieved
-                                            through the empowerment of authenticity
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex justify-end">
-                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 items-center justify-between">
-                        <button id="prev-button">
-                            <svg width="87" height="57" viewBox="0 0 87 57" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M25.0719 0.977429C25.264 0.984778 25.45 1.04736 25.6075 1.15768C25.7649 1.26801 25.8873 1.42139 25.9598 1.59946C26.0324 1.77754 26.0521 1.97275 26.0165 2.16172C25.981 2.35069 25.8917 2.5254 25.7594 2.66493L3.22812 28.0087H85.0094C85.0717 27.9987 85.1346 27.9987 85.1969 28.0087C85.7205 28.0577 86.1522 28.5789 86.1031 29.1024C86.054 29.626 85.533 30.0578 85.0094 30.0087H3.22812L25.7594 55.3212C25.9376 55.5201 26.0294 55.7816 26.0148 56.0483C26.0001 56.315 25.8802 56.5649 25.6812 56.7431C25.4823 56.9212 25.2208 57.0131 24.9541 56.9985C24.6875 56.9838 24.4376 56.8638 24.2594 56.6649L0.259369 29.6649C0.0924988 29.4809 6.86646e-05 29.2414 6.86646e-05 28.9931C6.86646e-05 28.7447 0.0924988 28.5052 0.259369 28.3212L24.2594 1.32118C24.3595 1.20557 24.4848 1.11446 24.6257 1.05487C24.7665 0.995278 24.9192 0.968785 25.0719 0.977429Z"
-                                    fill="#D3D3D3" />
-                            </svg>
-                        </button>
-                        <div id="carousel-text" class="hidden lg:block text-brandLight text-[15px] mx-auto">1 of 3</div>
-                        <button id="next-button">
-                            <svg width="87" height="57" viewBox="0 0 87 57" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M61.142 0.977429C60.9499 0.984778 60.7639 1.04736 60.6064 1.15768C60.4489 1.26801 60.3266 1.42139 60.254 1.59946C60.1815 1.77754 60.1618 1.97275 60.1974 2.16172C60.2329 2.35069 60.3222 2.5254 60.4545 2.66493L82.9857 28.0087H1.2045C1.14218 27.9987 1.07931 27.9987 1.017 28.0087C0.493397 28.0577 0.0616582 28.5789 0.110745 29.1024C0.159832 29.626 0.680897 30.0578 1.2045 30.0087H82.9857L60.4545 55.3212C60.2763 55.5201 60.1844 55.7816 60.1991 56.0483C60.2137 56.315 60.3337 56.5649 60.5326 56.7431C60.7315 56.9212 60.9931 57.0131 61.2597 56.9985C61.5264 56.9838 61.7763 56.8638 61.9545 56.6649L85.9545 29.6649C86.1214 29.4809 86.2138 29.2414 86.2138 28.9931C86.2138 28.7447 86.1214 28.5052 85.9545 28.3212L61.9545 1.32118C61.8544 1.20557 61.7291 1.11446 61.5882 1.05487C61.4473 0.995278 61.2947 0.968785 61.142 0.977429Z"
-                                    fill="#4BC0EB" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="offering"
-        class="bg-gradient-to-b from-[#16314f] to-[#051727] border-b border-white text-white h-auto">
-        <div class="container px-7 2xl:px-32 py-10 md:py-20 lg:py-36 section opacity-0">
-            <div class="text-[48px] lg:text-[68px] text-white pb-8 lg:pb-10">
-                Our Offering
-            </div>
-            <div class="space-y-10 lg:max-w-3xl">
-                <div class="text-[20px] lg:text-[22px]">
-                    We provide transformational capital solutions designed to help independent RIAs to
-                    preserve their legacy, fuel their growth, and achieve operational excellence. Our
-                    approach integrates capital, expertise, and partnership into a single, tailored solution.
-                </div>
-                <div class="leading-7 lg:leading-10">
-                    <div class="font-semibold text-[20px] lg:text-[26px]">
-                        Aligned Partnerships
-                    </div>
-                    <div class="text-[20px] lg:text-[22px]">
-                        Our investment model prioritizes long-term alignment with our partner firms.
-                        By offering common equity, we create partnerships rather than ownership takeovers.
-                        Our minority interest structure prevents triggering change-of-control provisions,
-                        allowing firms to remain independent while benefiting from our capital and strategic support.
-                    </div>
-                </div>
-                <div class="leading-7 lg:leading-10">
-                    <div class="font-semibold text-[20px] lg:text-[26px]">
-                        Growth Capital
-                    </div>
-                    <div class="text-[20px] lg:text-[22px]">
-                        We provide capital that empowers RIAs to scale, supporting both organic growth and M&A
-                        initiatives. Our disciplined approach ensures capital is deployed effectively for business
-                        expansion, brand development, and operational enhancements.
-                    </div>
-                </div>
-                <div class="leading-7 lg:leading-10">
-                    <div class="font-semibold text-[20px] lg:text-[26px]">
-                        Advice and Guidance
-                    </div>
-                    <div class="text-[20px] lg:text-[22px]">
-                        As experienced RIA operators, we offer more than capital—we serve as informational and
-                        data resources, networkers, and sounding boards, helping firms streamline operations,
-                        enhance leadership transitions, and improve workflow efficiencies.
-                    </div>
-                </div>
-                <div class="leading-7 lg:leading-10 pb-20 md:pb-0">
-                    <div class="font-semibold text-[20px] lg:text-[26px]">
-                        Domain Expertise
-                    </div>
-                    <div class="text-[20px] lg:text-[22px]">
-                        Our direct operational experience helps RIAs navigate industry shifts and execute
-                        growth strategies with confidence. We offer hands-on support in areas like M&A
-                        execution, business management, and process optimization. Our deep understanding of
-                        sector trends and macroeconomic forces positions our partner firms for long-term success.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="images/circles.png"
-            class="hidden lg:block sticky bottom-0 right-0 left-auto max-w-[20%]"
-            style="top: 100px; margin-left: auto;" />
-        <img src="images/circles.png" class="max-w-[45%] md:hidden" style="top: 100px; margin-left: auto;" />
-    </section>
-
-    <section class="scroll-mt-20 bg-[#16314f] lg:bg-gradient-to-r from-[#16314f] from-50% via-[#051727] to-[#051727]">
-        <div class="flex flex-col lg:flex-row container px-7 2xl:px-32 h-auto relative pb-16 lg:py-0 section opacity-0">
+          <div class="flex gap-4 md:gap-12 text-med">
             <div
-                class="lg:basis-1/2 bg-[#16314f] lg:sticky top-24 pt-10 left-0 z-10 h-fit text-white lg:py-40 2xl:py-48">
-                <div
-                    class="flex flex-wrap gap-2 lg:flex-col text-2xl md:text-3xl lg:text-[68px] leading-snug pb-6 md:py-10">
-                    <div>
-                        The PHC
-                    </div>
-                    <div>
-                        Partnership
-                    </div>
-                    <div>
-                        Approach
-                    </div>
-                </div>
+              class="md:basis-1/4 my-2 md:my-10 border-r-2 border-brand"
+            ></div>
+            <div class="md:basis-3/4 space-y-6 my-2 md:my-10 lg:pr-10">
+                <div class="font-semibold text-lg lg:text-xl">Redefining What’s Possible in Independent Wealth Management</div>
+              <div>
+                Over the past two decades, the independent financial advisory
+                landscape has evolved significantly — bringing with it a
+                <span class="font-semibold">unique opportunity</span> for firms
+                committed to preserving their independence and authenticity.
+              </div>
+              <div>
+                Today’s environment, shaped by a rising generation of
+                leadership, democratized access to
+                <span class="font-semibold">institutional-grade technology</span
+                >, and unprecedented transparency in valuations and deal
+                structures, offers forward-looking firms the chance not just to
+                survive this era of mass aggregation — but to thrive in it.
+              </div>
+              <div>
+                At Plover Hill Capital, we challenge the conventional thinking
+                that internal succession from G1 to G2 is impractical or
+                economically out of reach. We reject the notion that independent
+                firms must compromise their identity to stay competitive.
+              </div>
+              <div>
+                We believe in a different path — one where
+                <span class="font-semibold"
+                  >independence is not only preserved but amplified.</span
+                >
+                With the right capital, strategy, and partnership, advisory
+                firms can grow, evolve, and define success on their own terms.
+              </div>
             </div>
-
-            <div class="lg:basis-1/2 text-white lg:bg-[#051727] lg:pl-20 relative">
-                <div class="lg:space-y-28 md:pb-20 lg:py-32">
-                    <div class="pb-10">
-                        <div class="text-lg lg:text-xl pb-4 lg:pb-8 font-semibold">
-                            1. Legacy – Secure the Future While Honoring the Past
-                    </div>
-                        <div class="text-med lg:text-lg pb-4 lg:pb-8">
-                            We help firms build <span class="font-semibold">sustainable, multi-generational businesses </span> through:
-                        </div>
-                        <div class="lg:text-lg space-y-4 leading-6 md:leading-9 pl-2 lg:pl-4">
-                            <li>
-                                <span class="font-semibold">Structured succession pathways</span> that allow G1 founders to transition ownership thoughtfully and deliberately.
-                            </li>
-                            <li>
-                                <span class="font-semibold">Opportunities for G2 leadership</span> to step into ownership without prohibitive financial risk.
-                            </li>
-                            <li>
-                                <span class="font-semibold">Support for internal continuity</span> so clients experience a seamless transition and clear vision for the future.
-                            </li>
-                        </div>
-                    </div>
-                    <div class="pb-10">
-                        <div class="text-lg lg:text-xl pb-4 lg:pb-8 font-semibold">
-                            2. Growth – Invest in People and Promote Innovation
-                        </div>
-                        <div class="text-med lg:text-lg pb-4 lg:pb-8">
-                            We provide <span class="font-semibold">capital and guidance</span> to fuel the next stage of an RIA’s growth, whether through <span class="font-semibold">organic expansion, strategic hires, or acquisitions.</span> Our partnership enables firms to:
-                        </div>
-                        <div class="lg:text-lg space-y-4 leading-6 md:leading-9 pl-2 lg:pl-4">
-                            <li>
-                                <span class="font-semibold">Expand service offerings</span> to meet evolving client needs.
-                            </li>
-                            <li>
-                                <span class="font-semibold">Upgrade technology and infrastructure</span> to enhance efficiency and client experience.
-                            </li>
-                            <li>
-                                <span class="font-semibold">Strengthen branding and marketin </span> to attract and retain top-tier clients.
-                            </li>
-                            <li>
-                                <span class="font-semibold">Recruit and retain top talent</span> to build a high-performing team.
-                            </li>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="text-lg lg:text-xl pb-4 lg:pb-8 font-semibold">
-                            3. Independence – Stay True to Your Vision
-                        </div>
-                        <div class="text-med lg:text-lg pb-4 lg:pb-8">
-                            We believe <span>independent firms can flourish through maintaining independence.</span> Our investment structure ensures:
-                        </div>
-                        <div class="lg:text-lg space-y-4 leading-6 md:leading-9 pl-2 lg:pl-4">
-                            <li>
-                                <span>No loss of control</span> – Partner firms retain <span>majority ownership and decision-making power.</span>
-                            </li>
-                            <li>
-                                <span>Alignment of interests</span> - Our success is <span>tied to the long-term success</span> of the firm and its leadership.
-                            </li>
-                            <li>
-                                <span>A true partnership</span> – We provide guidance and support, <span>but the firm’s vision remains its own.</span>
-                            </li>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
+
+      <div
+        class="bg-cover bg-gradient-to-b from-transparent to-brand/20 pt-10 lg:pt-20 pb-10 sm:pb-0 relative overflow-hidden"
+      >
+        <div class="container px-7 2xl:px-32">
+          <div class="text-[36px] lg:text-[48px] pb-10 lg:pb-16">
+            Market Opportunity
+          </div>
+          <img
+            src="images/line.png"
+            class="hidden sm:block absolute top-12 lg:top-14 right-0 max-w-[20%]"
+          />
+
+          <div
+            class="grid w-2/3 sm:w-full sm:grid-cols-2 lg:grid-cols-4 lg:gap-10 border-l-2 border-brand pl-3 sm:pl-0 sm:border-none"
+          >
+            <div
+              class="grid relative h-auto sm:border-r-2 sm:border-brand pr-4"
+            >
+              <div
+                class="text-brand text-3xl lg:text-4xl flex items-start gap-1"
+              >
+                <div>>15K</div>
+                <div class="text-sm pt-4">*</div>
+              </div>
+              <div class="text-base lg:text-med md:pt-2 md:pb-16 lg:pb-20">
+                SEC Registered RIAs in 2023 an increase from 2022
+              </div>
+              <div class="mt-auto text-[11px] text-brand flex gap-1 pt-4 pb-12">
+                <div>*</div>
+                <a
+                  href="https://www.thinkadvisor.com/2024/06/21/what-the-ria-industry-looks-like-now-in-4-charts/"
+                  class="hover:underline break-words whitespace-normal break-all"
+                  target="_blank"
+                >
+                  https://www.thinkadvisor.com/2024/06/21/what-the-ria-industry-looks-like-now-in-4-charts/
+                </a>
+              </div>
+            </div>
+            <img
+              src="images/line.png"
+              class="absolute top-[36%] -right-24 max-w-60 sm:hidden"
+            />
+            <div
+              class="grid relative h-auto lg:border-r-2 lg:border-brand sm:pl-4 lg:pl-0 lg:pr-4"
+            >
+              <div
+                class="text-brand text-3xl lg:text-4xl flex items-start gap-2"
+              >
+                <div>$128.4T</div>
+                <div class="text-sm pt-4">*</div>
+              </div>
+              <div class="text-base lg:text-med md:pt-2 md:pb-16 lg:pb-20">
+                AUM in discretionary managed AUM
+              </div>
+              <div class="mt-auto text-[11px] text-brand flex gap-1 pt-4 pb-12">
+                <div>*</div>
+                <a
+                  href="https://www.thinkadvisor.com/2024/06/21/what-the-ria-industry-looks-like-now-in-4-charts/"
+                  class="hover:underline break-words whitespace-normal break-all"
+                  target="_blank"
+                >
+                  https://www.thinkadvisor.com/2024/06/21/what-the-ria-industry-looks-like-now-in-4-charts/
+                </a>
+              </div>
+            </div>
+            <div
+              class="grid relative h-auto sm:border-r-2 sm:border-brand pr-4"
+            >
+              <div
+                class="text-brand text-3xl lg:text-4xl flex items-start gap-1"
+              >
+                <div>37%</div>
+                <div class="text-sm pt-4">*</div>
+              </div>
+              <div class="text-base lg:text-med md:pt-2 lg:pb-20">
+                <span>
+                  Financial advisors who plan to retire within 10 years
+                  representing
+                  <span class="font-semibold"> $10.4T </span>
+                </span>
+              </div>
+              <div class="mt-auto text-[11px] text-brand flex gap-1 pt-4 pb-12">
+                <div>*</div>
+                <a
+                  href="https://advisorlawllc.com/urgent-call-for-advisor-succession-planning/"
+                  class="hover:underline break-words whitespace-normal break-all"
+                  target="_blank"
+                >
+                  https://advisorlawllc.com/urgent-call-for-advisor-succession-planning/
+                </a>
+              </div>
+            </div>
+            <div class="grid relative h-auto sm:pl-4 lg:pl-0 lg:pr-4">
+              <div
+                class="text-brand text-3xl lg:text-4xl flex items-start gap-1"
+              >
+                <div>40%</div>
+                <div class="text-sm pt-4">*</div>
+              </div>
+              <div class="text-base lg:text-med md:pt-2 md:pb-16 lg:pb-20">
+                Financial advisors who do not have a succession plan
+              </div>
+              <div class="mt-auto text-[11px] text-brand flex gap-1 pt-4 pb-12">
+                <div>*</div>
+                <a
+                  href="https://advisorlawllc.com/urgent-call-for-advisor-succession-planning/"
+                  class="hover:underline break-words whitespace-normal break-all"
+                  target="_blank"
+                >
+                  https://advisorlawllc.com/urgent-call-for-advisor-succession-planning/
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="scroll-mt-20 relative bg-brand/20 lg:bg-gradient-to-r from-[#0BA8E0] from-50% via-white to-white">
-        <div class="flex flex-col lg:flex-row container px-7 2xl:px-32 section opacity-0">
-            <div class="lg:basis-1/2 lg:sticky top-16 left-0 z-10 h-fit lg:py-40 2xl:py-48">
-                <div class="leading-snug py-6 md:py-10 lg:pb-0 section opacity-0 text-brand lg:text-white">
-                    <img src="images/bird-brand.png" class="w-10 md:w-16 pb-4 lg:hidden" />
-                    <img src="images/bird-brand.png" class="w-12 md:w-16 pb-6 hidden saturate-0 contrast-200 brightness-200 lg:block" />
-                    <div
-                        class="flex flex-wrap gap-2 lg:flex-col text-2xl md:text-3xl lg:text-[68px] font-medium lg:font-normal">
-                        <div>
-                            Plover Hill
-                        </div>
-                        <div>
-                            Internal
-                        </div>
-                        <div>
-                            Succession
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section
+      id="pillars"
+      class="lg:min-h-screen bg-gradient-to-b from-[#051727] to-[#16314f] border-b border-white relative overflow-hidden"
+    >
+      <img
+        src="images/p.png"
+        class="hidden md:block absolute top-4 md:top-8 max-w-[20%] md:max-w-[15%]"
+      />
 
-            <div class="lg:basis-1/2 lg:bg-white lg:pl-20">
-                <div class="lg:space-y-28 md:pb-20 lg:py-32">
-                    <div>
-                        <div class="font-semibold text-med lg:text-lg pb-4 lg:pb-8">
-                            PHC Succession Solution
-                        </div>
-                        <div class="text-med lg:text-lg space-y-4 leading-6 md:leading-9 pl-2 lg:pl-4">
-                            <li>
-                                PCH designed mezzanine-like succession solution that creates flexible structure
-                                that aligns incentives and provides G1 with fair market value for shares
-                            </li>
-                            <li>
-                                5 year interest-only period, followed by fixed 10 year term loan allows G2 the
-                                time and flexibility to grow the business
-                            </li>
-                            <li>
-                                No personal guarantee after 1 year transition period
-                            </li>
-                            <li>
-                                Fair market value received by G1 with achievable capital terms for G2 allowing
-                                for successful internal transition
-                            </li>
-                        </div>
-                    </div>
-                    <div class="py-10">
-                        <div class="text-xl lg:text-3xl space-y-4 text-brand font-medium">
-                            Plover Hill’s internal succession solution is an optimized structure allowing for
-                            enduring legacy and value creation.
-                        </div>
-                    </div>
+      <div
+        class="section opacity-0 container px-7 2xl:px-32 py-10 md:py-20 lg:py-32 gap-10"
+      >
+        <div>
+          <div class="md:flex">
+            <div class="basis-1/4"></div>
+            <div class="basis-3/4">
+              <div class="text-[48px] lg:text-[68px] text-white pb-8 lg:pb-10">
+                Pillars
+              </div>
+              <div>
+                <div class="text-white text-med lg:text-[22px] xl:w-5/6">
+                  Our steadfast principles serve as our cornerstone to ensure
+                  uniformity and alignment in fulfilling our mission.
                 </div>
+                <div class="relative text-slides pb-14">
+                  <div class="slide text-brandLight">
+                    <div
+                      class="text-xl lg:text-2xl pb-1 pt-10 md:pt-28 lg:pt-36 md:pb-8 font-semibold"
+                    >
+                      Longevity
+                    </div>
+                    <div class="text-med lg:text-[26px] w-4/5 sm:w-1/2">
+                      <div>
+                        We think in terms of generational value creation, not
+                        quartly earnings
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="slide text-brandLight absolute inset-0 transition-opacity duration-300 ease-in-out opacity-0"
+                  >
+                    <div
+                      class="text-xl lg:text-2xl pb-1 pt-10 md:pt-28 lg:pt-36 md:pb-8 font-semibold"
+                    >
+                      Perseverance
+                    </div>
+                    <div class="text-med lg:text-[26px] sm:w-1/2">
+                      <div>
+                        We are stewards of the Founders’ legacy while supporting
+                        the next generation in building an enduring future​
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="slide text-brandLight absolute inset-0 transition-opacity duration-300 ease-in-out opacity-0"
+                  >
+                    <div
+                      class="text-xl lg:text-2xl pb-1 pt-10 md:pt-28 lg:pt-36 md:pb-8 font-semibold"
+                    >
+                      Authenticity
+                    </div>
+                    <div class="text-med lg:text-[26px] sm:w-1/2">
+                      <div>
+                        We believe one size doesn’t fit all and that true
+                        success is achieved through the empowerment of
+                        authenticity
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="flex justify-end">
+            <div
+              class="grid grid-cols-2 lg:grid-cols-3 gap-4 items-center justify-between"
+            >
+              <button id="prev-button">
+                <svg
+                  width="87"
+                  height="57"
+                  viewBox="0 0 87 57"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M25.0719 0.977429C25.264 0.984778 25.45 1.04736 25.6075 1.15768C25.7649 1.26801 25.8873 1.42139 25.9598 1.59946C26.0324 1.77754 26.0521 1.97275 26.0165 2.16172C25.981 2.35069 25.8917 2.5254 25.7594 2.66493L3.22812 28.0087H85.0094C85.0717 27.9987 85.1346 27.9987 85.1969 28.0087C85.7205 28.0577 86.1522 28.5789 86.1031 29.1024C86.054 29.626 85.533 30.0578 85.0094 30.0087H3.22812L25.7594 55.3212C25.9376 55.5201 26.0294 55.7816 26.0148 56.0483C26.0001 56.315 25.8802 56.5649 25.6812 56.7431C25.4823 56.9212 25.2208 57.0131 24.9541 56.9985C24.6875 56.9838 24.4376 56.8638 24.2594 56.6649L0.259369 29.6649C0.0924988 29.4809 6.86646e-05 29.2414 6.86646e-05 28.9931C6.86646e-05 28.7447 0.0924988 28.5052 0.259369 28.3212L24.2594 1.32118C24.3595 1.20557 24.4848 1.11446 24.6257 1.05487C24.7665 0.995278 24.9192 0.968785 25.0719 0.977429Z"
+                    fill="#D3D3D3"
+                  />
+                </svg>
+              </button>
+              <div
+                id="carousel-text"
+                class="hidden lg:block text-brandLight text-[15px] mx-auto"
+              >
+                1 of 3
+              </div>
+              <button id="next-button">
+                <svg
+                  width="87"
+                  height="57"
+                  viewBox="0 0 87 57"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M61.142 0.977429C60.9499 0.984778 60.7639 1.04736 60.6064 1.15768C60.4489 1.26801 60.3266 1.42139 60.254 1.59946C60.1815 1.77754 60.1618 1.97275 60.1974 2.16172C60.2329 2.35069 60.3222 2.5254 60.4545 2.66493L82.9857 28.0087H1.2045C1.14218 27.9987 1.07931 27.9987 1.017 28.0087C0.493397 28.0577 0.0616582 28.5789 0.110745 29.1024C0.159832 29.626 0.680897 30.0578 1.2045 30.0087H82.9857L60.4545 55.3212C60.2763 55.5201 60.1844 55.7816 60.1991 56.0483C60.2137 56.315 60.3337 56.5649 60.5326 56.7431C60.7315 56.9212 60.9931 57.0131 61.2597 56.9985C61.5264 56.9838 61.7763 56.8638 61.9545 56.6649L85.9545 29.6649C86.1214 29.4809 86.2138 29.2414 86.2138 28.9931C86.2138 28.7447 86.1214 28.5052 85.9545 28.3212L61.9545 1.32118C61.8544 1.20557 61.7291 1.11446 61.5882 1.05487C61.4473 0.995278 61.2947 0.968785 61.142 0.977429Z"
+                    fill="#4BC0EB"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section
+      id="offering"
+      class="bg-gradient-to-b from-[#16314f] to-[#051727] border-b border-white text-white h-auto"
+    >
+      <div
+        class="container px-7 2xl:px-32 py-10 md:py-20 lg:py-36 section opacity-0"
+      >
+        <div class="text-[48px] lg:text-[68px] text-white pb-8 lg:pb-10">
+          What We Offer
+        </div>
+        <div class="space-y-10 lg:max-w-3xl">
+          <div class="text-[20px] lg:text-[22px]">
+            We provide transformational capital solutions designed to help
+            independent RIAs to preserve their legacy, fuel their growth, and
+            achieve operational excellence. Our approach integrates capital,
+            expertise, and partnership into a single, tailored solution.
+          </div>
+          <div class="leading-7 lg:leading-10">
+            <div class="font-semibold text-[20px] lg:text-[26px]">
+              Capital with Purpose
+            </div>
+            <div class="text-[20px] lg:text-[22px]">
+              We provide tailored capital to help independent advisors grow,
+              streamline operations, and preserve what they’ve built—on their
+              own terms.
+            </div>
+          </div>
+          <div class="leading-7 lg:leading-10">
+            <div class="font-semibold text-[20px] lg:text-[26px]">
+              Partnership, Not Control
+            </div>
+            <div class="text-[20px] lg:text-[22px]">
+              Our minority investment model keeps firms independent. No
+              change-of-control triggers. No ownership takeovers. Just long-term
+              alignment and support.
+            </div>
+          </div>
+          <div class="leading-7 lg:leading-10">
+            <div class="font-semibold text-[20px] lg:text-[26px]">
+              Fuel for Growth
+            </div>
+            <div class="text-[20px] lg:text-[22px]">
+              Whether it’s expanding your team, acquiring another firm, or
+              investing in infrastructure, our capital helps you scale with
+              intention.
+            </div>
+          </div>
+          <div class="leading-7 lg:leading-10 pb-20 md:pb-0">
+            <div class="font-semibold text-[20px] lg:text-[26px]">
+              Real-World Guidance
+            </div>
+            <div class="text-[20px] lg:text-[22px]">
+              We’ve sat in your seat. Our team offers hands-on support across
+              operations, leadership transitions, and workflow improvements.
+            </div>
+          </div>
+          <div class="leading-7 lg:leading-10 pb-20 md:pb-0">
+            <div class="font-semibold text-[20px] lg:text-[26px]">
+              RIA-Focused Expertise
+            </div>
+            <div class="text-[20px] lg:text-[22px]">
+              With deep industry insight and direct operational experience, we
+              help you navigate complexity and seize opportunity—with
+              confidence.
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="images/circles.png"
+        class="hidden lg:block sticky bottom-0 right-0 left-auto max-w-[20%]"
+        style="top: 100px; margin-left: auto"
+      />
+      <img
+        src="images/circles.png"
+        class="max-w-[45%] md:hidden"
+        style="top: 100px; margin-left: auto"
+      />
+    </section>
+
+    <section
+      class="scroll-mt-20 bg-[#16314f] lg:bg-gradient-to-r from-[#16314f] from-50% via-[#051727] to-[#051727]"
+    >
+      <div
+        class="flex flex-col lg:flex-row container px-7 2xl:px-32 h-auto relative pb-16 lg:py-0 section opacity-0"
+      >
+        <div
+          class="lg:basis-1/2 bg-[#16314f] lg:sticky top-24 pt-10 left-0 z-10 h-fit text-white lg:py-40 2xl:py-48"
+        >
+          <div
+            class="flex flex-wrap gap-2 lg:flex-col text-2xl md:text-3xl lg:text-[68px] leading-snug pb-6 md:py-10"
+          >
+            <div>The PHC</div>
+            <div>Partnership</div>
+            <div>Approach</div>
+          </div>
+        </div>
+
+        <div class="lg:basis-1/2 text-white lg:bg-[#051727] lg:pl-20 relative">
+          <div class="lg:space-y-28 md:pb-20 lg:py-32">
+            <div class="pb-10">
+              <div class="text-lg lg:text-xl pb-4 lg:pb-8 font-semibold">
+                Legacy: Create a Seamless Succession Plan
+              </div>
+              <div class="text-med lg:text-lg pb-4 lg:pb-8">
+                We help founders exit on their terms and empower next-gen
+                leaders to step up—with structure and support every step of the
+                way:
+              </div>
+              <div
+                class="lg:text-lg space-y-4 leading-6 md:leading-9 pl-2 lg:pl-4"
+              >
+                <li>
+                  Design internal succession plans that preserve culture and
+                  client trust
+                </li>
+                <li>
+                  Enable G2 ownership with accessible, non-disruptive financing
+                </li>
+                <li>Keep transitions smooth for clients and teams alike</li>
+              </div>
+            </div>
+            <div class="pb-10">
+              <div class="text-lg lg:text-xl pb-4 lg:pb-8 font-semibold">
+                2. Growth: Capital to Accelerate What’s Working
+              </div>
+              <div class="text-med lg:text-lg pb-4 lg:pb-8">
+                Fuel your next chapter with the resources and insight to scale
+                strategically:
+              </div>
+              <div
+                class="lg:text-lg space-y-4 leading-6 md:leading-9 pl-2 lg:pl-4"
+              >
+                <li>Hire key talent to expand capacity and expertise</li>
+                <li>Invest in marketing, branding, and client experience</li>
+                <li>Upgrade tech and operations to support long-term growth</li>
+                <li>Pursue M&A opportunities with experienced deal support</li>
+              </div>
+            </div>
+            <div>
+              <div class="text-lg lg:text-xl pb-4 lg:pb-8 font-semibold">
+                3. Independence: Stay in Control, Stay True to Your Vision
+              </div>
+              <div class="text-med lg:text-lg pb-4 lg:pb-8">
+                Our structure is built for firms who want capital without
+                compromise:
+              </div>
+              <div
+                class="lg:text-lg space-y-4 leading-6 md:leading-9 pl-2 lg:pl-4"
+              >
+                <li>
+                  You keep majority ownership and full decision-making authority
+                </li>
+                <li>Our interests are aligned—we win when you do</li>
+                <li>We offer support, not mandates—your firm, your future</li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="scroll-mt-20 relative bg-brand/20 lg:bg-gradient-to-r from-[#0BA8E0] from-50% via-white to-white"
+    >
+      <div
+        class="flex flex-col lg:flex-row container px-7 2xl:px-32 section opacity-0"
+      >
+        <div
+          class="lg:basis-1/2 lg:sticky top-16 left-0 z-10 h-fit lg:py-40 2xl:py-48"
+        >
+          <div
+            class="leading-snug py-6 md:py-10 lg:pb-0 section opacity-0 text-brand lg:text-white"
+          >
+            <img
+              src="images/bird-brand.png"
+              class="w-10 md:w-16 pb-4 lg:hidden"
+            />
+            <img
+              src="images/bird-brand.png"
+              class="w-12 md:w-16 pb-6 hidden saturate-0 contrast-200 brightness-200 lg:block"
+            />
+            <div
+              class="flex flex-wrap gap-2 lg:flex-col text-2xl md:text-3xl lg:text-[68px] font-medium lg:font-normal"
+            >
+              <div>Plover Hill</div>
+              <div>Internal</div>
+              <div>Succession</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:basis-1/2 lg:bg-white lg:pl-20">
+          <div class="lg:space-y-28 md:pb-20 lg:py-32">
+            <div>
+              <div class="font-semibold text-med lg:text-lg pb-4 lg:pb-8">
+                PHC Succession Solution
+              </div>
+              <div
+                class="text-med lg:text-lg space-y-4 leading-6 md:leading-9 pl-2 lg:pl-4"
+              >
+                <li>
+                  PCH designed mezzanine-like succession solution that creates
+                  flexible structure that aligns incentives and provides G1 with
+                  fair market value for shares
+                </li>
+                <li>
+                  5 year interest-only period, followed by fixed 10 year term
+                  loan allows G2 the time and flexibility to grow the business
+                </li>
+                <li>No personal guarantee after 1 year transition period</li>
+                <li>
+                  Fair market value received by G1 with achievable capital terms
+                  for G2 allowing for successful internal transition
+                </li>
+              </div>
+            </div>
+            <div class="py-10">
+              <div class="text-xl lg:text-3xl space-y-4 text-brand font-medium">
+                Plover Hill’s internal succession solution is an optimized
+                structure allowing for enduring legacy and value creation.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="leadership" class="section opacity-0 relative overflow-hidden">
-        <img src="images/squares.png" class="absolute max-w-[30%] sm:max-w-[20%]" />
+      <img
+        src="images/squares.png"
+        class="absolute max-w-[30%] sm:max-w-[20%]"
+      />
 
-        <div class="container px-7 2xl:px-32 py-10 md:py-20 lg:py-32 md:flex gap-10">
-            <div>
-                <div class="md:flex">
-                    <div class="basis-[40%]"></div>
-                    <div class="basis-[60%] space-y-6">
-                        <div class="text-[48px] lg:text-[68px]">
-                            Leadership
-                        </div>
-                        <div class="text-[28px] lg:text-2xl">
-                            “​The answer is in the room.”
-                        </div>
-                        <div class="text-med md:text-lg">
-                            – Quote from one of Rob’s mentors, which has driven much of his
-                            perspective on leadership and building enduring companies
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="lg:flex lg:flex-row-reverse lg:items-center gap-10 lg:gap-20 xl:gap-36 pt-10 md:pt-28">
-                    <div class="w-[80%] md:w-[60%] lg:w-full basis-[40%]">
-                        <img src="images/portrait.png" class="brightness-90 opacity-90" />
-                    </div>
-                    <div class="basis-[60%]">
-                        <div class="text-[28px] md:text-[32px] font-semibold pt-8 lg:pt-0">
-                            Rob Martin
-                        </div>
-                        <div class="text-[22px] lg:text-[28px] pt-2">
-                            Founder, Managing Partner
-                        </div>
-                        <div class="text-med lg:text-[22px] pt-8">
-                            In 2008, Rob began his finance career at Symmetry Partners, climbing the ranks from Compliance
-                            Associate to Director of Marketing to President. Tasked with leading a new RIA initiative in
-                            2014, he co-founded Apella, which grew from $80 million to $3.5 billion in AUM by June
-                            2023. Under his leadership, Apella completed 13 transactions and launched 10 offices
-                            nationwide, solidifying its status as one of the fastest-growing RIAs. Rob holds
-                            degrees in Psychology from the University of Richmond and the University of New
-                            Haven.
-                        </div>
-                        <div class="text-med lg:text-[22px] pb-14 pt-6">
-                            Outside work, he serves on the board of the CFM Foundation and enjoys summers in
-                            Narragansett, RI, and skiing in the winter.
-                        </div>
-                    </div>
-                </div>
-                <button
-                    class="show-calendar rounded-sm text-white px-5 py-4 bg-brand sm:hover:bg-black max-w-fit transition duration-0 hover:duration-200 md:text-med font-medium">
-                    Schedule a meeting
-                </button>
+      <div
+        class="container px-7 2xl:px-32 py-10 md:py-20 lg:py-32 md:flex gap-10"
+      >
+        <div>
+          <div class="md:flex">
+            <div class="basis-[40%]"></div>
+            <div class="basis-[60%] space-y-6">
+              <div class="text-[48px] lg:text-[68px]">Leadership</div>
+              <div class="text-[28px] lg:text-2xl">
+                “​The answer is in the room.”
+              </div>
+              <div class="text-med md:text-lg">
+                – Quote from one of Rob’s mentors, which has driven much of his
+                perspective on leadership and building enduring companies
+              </div>
             </div>
+          </div>
+          <div
+            class="lg:flex lg:flex-row-reverse lg:items-center gap-10 lg:gap-20 xl:gap-36 pt-10 md:pt-28"
+          >
+            <div class="w-[80%] md:w-[60%] lg:w-full basis-[40%]">
+              <img src="images/portrait.png" class="brightness-90 opacity-90" />
+            </div>
+            <div class="basis-[60%]">
+              <div
+                class="text-[28px] md:text-[32px] font-semibold pt-8 lg:pt-0"
+              >
+                Rob Martin
+              </div>
+              <div class="text-[22px] lg:text-[28px] pt-2">
+                Founder, Managing Partner
+              </div>
+              <div class="text-med lg:text-[22px] pt-8">
+                In 2008, Rob began his finance career at Symmetry Partners,
+                climbing the ranks from Compliance Associate to Director of
+                Marketing to President. Tasked with leading a new RIA initiative
+                in 2014, he co-founded Apella, which grew from $80 million to
+                $3.5 billion in AUM by June 2023. Under his leadership, Apella
+                completed 13 transactions and launched 10 offices nationwide,
+                solidifying its status as one of the fastest-growing RIAs. Rob
+                holds degrees in Psychology from the University of Richmond and
+                the University of New Haven.
+              </div>
+              <div class="text-med lg:text-[22px] pb-14 pt-6">
+                Outside work, he serves on the board of the CFM Foundation and
+                enjoys summers in Narragansett, RI, and skiing in the winter.
+              </div>
+            </div>
+          </div>
+          <button
+            class="show-calendar rounded-sm text-white px-5 py-4 bg-brand sm:hover:bg-black max-w-fit transition duration-0 hover:duration-200 md:text-med font-medium"
+          >
+            Schedule a meeting
+          </button>
         </div>
+      </div>
     </section>
 
-    <div id="popup"
-        class="fixed inset-0 bg-black bg-opacity-80 z-50 hidden opacity-0 transition-opacity duration-300 ease-in-out">
+    <div
+      id="popup"
+      class="fixed inset-0 bg-black bg-opacity-80 z-50 hidden opacity-0 transition-opacity duration-300 ease-in-out"
+    >
+      <div
+        class="popup-content rounded-lg shadow-lg absolute min-w-fit container mx-auto px-7 2xl:px-32 inset-x-0 top-1/2 -translate-y-1/2"
+      >
         <div
-            class="popup-content rounded-lg shadow-lg absolute min-w-fit container mx-auto px-7 2xl:px-32 inset-x-0 top-1/2 -translate-y-1/2">
-            <div class="meetings-iframe-container" data-src="https://meetings.hubspot.com/rmartin17?embed=true"></div>
-            <script type="text/javascript"
-                src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
-        </div>
-        <button id="close-popup"
-            class="absolute top-4 right-4 bg-black text-white border-2 border-white rounded-full w-8 h-8 lg:w-10 lg:h-10 flex items-center justify-center">
-            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6 18L18 6M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-            </svg>
-        </button>
+          class="meetings-iframe-container"
+          data-src="https://meetings.hubspot.com/rmartin17?embed=true"
+        ></div>
+        <script
+          type="text/javascript"
+          src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"
+        ></script>
+      </div>
+      <button
+        id="close-popup"
+        class="absolute top-4 right-4 bg-black text-white border-2 border-white rounded-full w-8 h-8 lg:w-10 lg:h-10 flex items-center justify-center"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6 18L18 6M6 6l12 12"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
     </div>
 
     <footer class="bg-[#051727] text-white py-10 lg:py-20 mt-24">
-        <div class="container px-7 2xl:px-32">
-            <div class="flex pb-10 gap-10 items-center">
-                <div>
-                    <img src="images/bird-brand.png" class="w-14 md:w-32" />
-                </div>
-                <div class="text-sm md:text-base space-y-6">
-                    <a href="tel:860-918-8521">860-918-8521</a>
-                    <div>
-                        <a href="mailto:rmartin@ploverhillcapital.com"
-                            class="sm:hover:underline">rmartin@ploverhillcapital.com</a>
-                    </div>
-                </div>
+      <div class="container px-7 2xl:px-32">
+        <div class="flex pb-10 gap-10 items-center">
+          <div>
+            <img src="images/bird-brand.png" class="w-14 md:w-32" />
+          </div>
+          <div class="text-sm md:text-base space-y-6">
+            <a href="tel:860-918-8521">860-918-8521</a>
+            <div>
+              <a
+                href="mailto:rmartin@ploverhillcapital.com"
+                class="sm:hover:underline"
+                >rmartin@ploverhillcapital.com</a
+              >
             </div>
-            <div class="pt-10 border-t border-brand/20 text-sm md:text-base">
-                © 2024 All Rights Reserved.
-            </div>
+          </div>
         </div>
+        <div class="pt-10 border-t border-brand/20 text-sm md:text-base">
+          © 2024 All Rights Reserved.
+        </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
