@@ -1005,9 +1005,6 @@ video {
 .pb-16 {
   padding-bottom: 4rem;
 }
-.pb-20 {
-  padding-bottom: 5rem;
-}
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -1778,10 +1775,6 @@ body {
 
   .lg\:text-\[4rem\] {
     font-size: 4rem;
-  }
-
-  .lg\:text-\[52px\] {
-    font-size: 52px;
   }
 
   .lg\:text-\[68px\] {
