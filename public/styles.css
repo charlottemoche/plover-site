@@ -819,6 +819,9 @@ video {
 .overflow-hidden {
   overflow: hidden;
 }
+.overflow-x-clip {
+  overflow-x: clip;
+}
 .whitespace-normal {
   white-space: normal;
 }
@@ -1497,6 +1500,10 @@ body {
 
   .md\:text-med {
     font-size: 1.125rem;
+  }
+
+  .md\:font-medium {
+    font-weight: 500;
   }
 
   .md\:leading-10 {
