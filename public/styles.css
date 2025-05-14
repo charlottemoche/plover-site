@@ -879,9 +879,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(11 168 224 / var(--tw-bg-opacity));
 }
-.bg-brand\/20 {
-  background-color: rgb(11 168 224 / 0.2);
-}
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -895,11 +892,6 @@ video {
 .from-\[\#051727\] {
   --tw-gradient-from: #051727 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(5 23 39 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-.from-\[\#0BA8E0\] {
-  --tw-gradient-from: #0BA8E0 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(11 168 224 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 .from-\[\#16314f\] {
@@ -927,10 +919,6 @@ video {
   --tw-gradient-to: rgb(5 23 39 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), #051727 var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
-.via-white {
-  --tw-gradient-to: rgb(255 255 255 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), #fff var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
 .to-\[\#051727\] {
   --tw-gradient-to: #051727 var(--tw-gradient-to-position);
 }
@@ -942,9 +930,6 @@ video {
 }
 .to-transparent {
   --tw-gradient-to: transparent var(--tw-gradient-to-position);
-}
-.to-white {
-  --tw-gradient-to: #fff var(--tw-gradient-to-position);
 }
 .to-80\% {
   --tw-gradient-to-position: 80%;
@@ -978,10 +963,6 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 .pb-1 {
   padding-bottom: 0.25rem;
@@ -1612,11 +1593,6 @@ body {
     background-color: transparent;
   }
 
-  .lg\:bg-white {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  }
-
   .lg\:bg-gradient-to-r {
     background-image: linear-gradient(to right, var(--tw-gradient-stops));
   }
@@ -1653,10 +1629,6 @@ body {
   .lg\:py-40 {
     padding-top: 10rem;
     padding-bottom: 10rem;
-  }
-
-  .lg\:pb-0 {
-    padding-bottom: 0px;
   }
 
   .lg\:pb-10 {
@@ -1719,10 +1691,6 @@ body {
     font-size: 1.875rem;
   }
 
-  .lg\:text-3xl {
-    font-size: 2.275rem;
-  }
-
   .lg\:text-4xl {
     font-size: 3.25rem;
   }
@@ -1767,17 +1735,8 @@ body {
     font-size: 1.5rem;
   }
 
-  .lg\:font-normal {
-    font-weight: 400;
-  }
-
   .lg\:leading-10 {
     line-height: 2.5rem;
-  }
-
-  .lg\:text-white {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 }
 
