@@ -6,6 +6,8 @@ module.exports = {
       colors: {
         brand: "#0BA8E0",
         brandLight: "#4BC0EB",
+        mediumBlue: "#16314F",
+        darkBlue: "#051727"
       },
       container: {
         center: true
