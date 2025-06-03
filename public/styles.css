@@ -760,9 +760,6 @@ video {
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-.cursor-default {
-  cursor: default;
-}
 .scroll-mt-20 {
   scroll-margin-top: 5rem;
 }
@@ -842,11 +839,6 @@ video {
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
-.divide-y > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-y-reverse: 0;
-  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
-  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
-}
 .self-center {
   align-self: center;
 }
@@ -858,9 +850,6 @@ video {
 }
 .whitespace-normal {
   white-space: normal;
-}
-.whitespace-nowrap {
-  white-space: nowrap;
 }
 .break-words {
   overflow-wrap: break-word;
@@ -1013,10 +1002,6 @@ video {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -1164,9 +1149,6 @@ video {
 .text-zinc-900 {
   --tw-text-opacity: 1;
   color: rgb(24 24 27 / var(--tw-text-opacity));
-}
-.underline {
-  text-decoration-line: underline;
 }
 .opacity-0 {
   opacity: 0;
@@ -1323,6 +1305,12 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .sm\:divide-y > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-y-reverse: 0;
+    border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+    border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+  }
+
   .sm\:border-r-2 {
     border-right-width: 2px;
   }
@@ -1346,6 +1334,11 @@ body {
     padding-bottom: 1rem;
   }
 
+  .sm\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
   .sm\:pb-0 {
     padding-bottom: 0px;
   }
@@ -1354,12 +1347,20 @@ body {
     padding-bottom: 4rem;
   }
 
+  .sm\:pb-8 {
+    padding-bottom: 2rem;
+  }
+
   .sm\:pl-0 {
     padding-left: 0px;
   }
 
   .sm\:pl-4 {
     padding-left: 1rem;
+  }
+
+  .sm\:pt-8 {
+    padding-top: 2rem;
   }
 
   .sm\:text-center {
