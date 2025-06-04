@@ -10,7 +10,16 @@
   <script src="index.js" defer></script>
 </head>
 
-<body class="relative">
+<body class="flex flex-col h-screen">
+  <div class="fixed inset-0 bg-white flex items-center justify-center">
+    <div class="flex flex-col items-center justify-center pb-20 px-4">
+      <img src="/images/plover-logo.png" class="h-40 justify-self-center" id="maintenance-logo" />
+      <p class="text-med lg:text-lg text-center">Website currently under maintenance.</p>
+    </div>
+  </div>
+</body>
+
+<!-- <body class="relative hidden">
   <div class="sticky top-0 z-50 bg-white shadow-md -mt-16 lg:-mt-24">
     <nav class="gap-3 flex items-center justify-between h-20 lg:h-24 relative container mx-auto 2xl:px-32 z-40">
       <a href="/" id="plover-logo" class="min-w-fit max-w-min">
@@ -60,7 +69,7 @@
   </div>
   <div class="bg-gradient-to-b from-brand/40 from-10% to-transparent to-80% relative">
     <section class="section header opacity-0 container px-6 2xl:px-36 overflow-x-clip">
-      <!-- DESKTOP -->
+
       <div class="hidden md:flex flex-col justify-between min-h-[100dvh]">
         <div class="flex flex-row gap-10 md:pt-14 lg:pt-28 2xl:pt-32">
           <div class="basis-2/3">
@@ -88,7 +97,6 @@
         </div>
       </div>
 
-      <!-- MOBILE -->
       <div class="md:hidden">
         <div class="min-h-[100dvh] flex flex-col justify-between">
           <div class="tracking-wide leading-[4rem] text-[3.2rem] max-w-xs space-y-2 pt-24">

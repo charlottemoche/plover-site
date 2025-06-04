@@ -662,6 +662,9 @@ video {
 .h-32 {
   height: 8rem;
 }
+.h-40 {
+  height: 10rem;
+}
 .h-8 {
   height: 2rem;
 }
@@ -677,6 +680,9 @@ video {
 }
 .h-full {
   height: 100%;
+}
+.h-screen {
+  height: 100vh;
 }
 .min-h-\[100dvh\] {
   min-height: 100dvh;
@@ -841,6 +847,9 @@ video {
 }
 .self-center {
   align-self: center;
+}
+.justify-self-center {
+  justify-self: center;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -1016,6 +1025,9 @@ video {
 }
 .pb-16 {
   padding-bottom: 4rem;
+}
+.pb-20 {
+  padding-bottom: 5rem;
 }
 .pb-4 {
   padding-bottom: 1rem;
